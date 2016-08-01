@@ -1,0 +1,279 @@
+body {
+  font-size: 16px;
+  font-color: #C45952;
+  background-color: #ff9999;
+	font-family:'Abel', sans-serif
+}
+
+/**HEADER**/
+
+#header-nav {
+	background-color: #ffffff;
+	border-radius: 10px; 
+	border:0;
+}
+
+#logo-img {
+	background: url('../images/JEH.png') no-repeat; 
+	width: 150px;
+	height: 150px;
+	
+
+}
+.navbar-brand {
+	padding-top: 30px;
+}
+
+.navbar-brand h1 {
+font-family:'Abel', sans-serif;
+color: #C45952;
+font-size: 1.2em;
+text-transform: lowercase;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: -10px;
+line-height: .75;
+} 
+
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+  padding-left:5px;
+  margin-right:10px;
+
+}
+
+#nav-list a {
+	color:#473F3F; 
+	text-align: center; 
+
+}
+
+#nav-list a:hover {
+	background: transparent;
+	box-shadow: 0 5px 10px 5px #cccccc;
+
+	border-radius: 20px;
+}
+#nav-list a span {
+  text-align: center;
+
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.navbar-toggle .icon-bar{
+	border:1px solid #ff9999;
+}
+.navbar-collapse {
+	padding-right: 0;
+}
+
+/***HEADER END*****/
+
+/****FOOTER****/
+
+.panel-footer {
+
+margin-top:30px;
+margin-bottom: 20px;
+padding-top:35px;
+padding-bottom:30px;
+background-color:#fff;
+opacity: .9;
+border-top:2px;
+border-radius:3px;
+}
+
+.panel-footer div.row {
+  margin-bottom: 30px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+  font-family:'Abel', sans-serif
+}
+
+#address p {
+  color: #ccc;
+  font-size: .8em;
+  line-height: 1.8;
+  font-family:'Abel', sans-serif
+}
+
+
+/* END FOOTER */
+
+
+
+/*****BODY PAGE******/
+
+.container .jumbotron {
+	border:2px solid white;
+	background-color: white;
+
+}
+
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width:100%;
+	margin-bottom:30px;
+	position:relative;
+	overflow:hidden;
+	border-radius: 3px;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 5px 10px 5px #fff;
+}
+
+
+#menu-tile {
+  background: url('../images/Placeholder_Tile.png') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/Placeholder_Tile.png') no-repeat;
+  background-position: center;
+}
+
+#map-tile {
+	background:url('../images/Placeholder_Tile.png') no-repeat;
+	background-position:center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: lowercase;
+  background-color: #FFE1D8;
+  color: #C45952 ;
+  opacity: .9;
+}
+
+#menu-tile, #specials-tile{
+	width:350px;
+	margin: 0 auto 15px;
+}
+
+
+/*MEDIA QUERIES*/
+
+/******* Large Devices *****/
+@media (min-width: 1200px){
+	.container .jumbotron {
+		background: url('../images/1200.png') no-repeat;
+		background-color: white;
+		height:500px;
+		border:2px solid white;
+		border-radius: 3px;
+		}
+	}
+
+/******** Medium Devices ********/
+@media (min-width: 992px) and (max-width: 1199px){
+
+	#logo-img{
+		width:150px;
+		height:150px;
+		margin-top: 20px;
+
+	}
+
+	  .container .jumbotron {
+    background: url('../images/992.png') no-repeat;
+    height: 558px;
+		border:2px solid white;
+		border-radius: 3px;
+		background-color: white;
+  	}
+
+ 	 #menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width:100%;
+	margin-bottom:30px;
+	position:relative;
+	overflow:hidden;
+	border-radius: 3px;
+	}
+
+}
+
+/******** Small Devices *******/
+@media (min-width: 768px) and (max-width: 991px){
+
+
+    .container .jumbotron {
+    height: 432px;
+		border:2px solid white;
+		border-radius: 3px;
+		background-color: white;
+
+}
+
+/******** Xtra Small Devices **********/
+@media (max-width: 767px) {
+
+	.navbar-brand {
+		padding-top:10px;
+		height: 80px;
+	}
+
+	#collapsable-nav a {
+	font-size: 1em;
+
+	}
+
+	#collapsable-nav a span {
+	font-size:1em;
+	margin-left:20px;
+	}
+
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw; /** 1vw = 1% of viewport width **/
+	}
+	.container.jumbotron {
+    margin-top: 30px;
+		border:2px solid white;
+		border-radius: 3px;
+		background-color: white;
+	}
+	
+}
+
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
+
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
